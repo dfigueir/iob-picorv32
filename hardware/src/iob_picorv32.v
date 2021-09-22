@@ -84,7 +84,7 @@ module iob_picorv32
 `ifdef USE_COMPRESSED
               .COMPRESSED_ISA(1),
 `endif
-              .MASKED_IRQ (32'h 8000_0000),
+              .ENABLE_IRQ(1),
               .LATCHED_IRQ (32'h 8000_0000),
               //.ENABLE_PCPI(1), //enables the following 2 parameters
               .BARREL_SHIFTER(1),
